@@ -1,0 +1,26 @@
+
+
+<%- include('header'); -%>
+  <div class="box" id="heading">
+    <h1><%= wow %></h1>
+  </div>
+  <div class="box">
+  <%  wonder.forEach(function(wond){ %>
+
+    <form action="/delete" method="post">
+      <div class="item">
+    <input type="checkbox" name="checkbox" value="<%=wond.name%>" onchange="this.form.submit()">
+    <p><%=wond.name%></p>
+      </div>
+        <input type="hidden" name="kurup" value="<%= wow %>"></input>
+        </form>
+
+  <%  });%>
+
+    <form class="item" action="/" method="post">
+      <input type="text" name="n1" placeholder="Add New Item" autocomplete="off">
+      <button type="submit" name="list" value= "<%= wow %>"> + </button>
+   </form>
+
+  </div>
+<%- include('footer'); -%>

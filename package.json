@@ -1,0 +1,25 @@
+{
+  "name": "practise",
+  "version": "1.0.0",
+  "description": "To Do List ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akash J",
+  "license": "ISC",
+  "engines": {
+    "node": "16.13.1",
+    "npm": "8.3.1"
+  },
+  "dependencies": {
+    "ash": "^0.0.2",
+    "body-parse": "^0.1.0",
+    "dateformat": "^5.0.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "load": "^1.0.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.1.7"
+  }
+}
